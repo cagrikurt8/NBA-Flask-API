@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} "Above the Rim" API {% endblock %}
+{% block teamContent %}
+    <h1>Welcome to the "Above the Rim" API!</h1>
+    <p>/api/v1/teams GET all teams</p>
+    <p>/api/v1/teams POST add team</p>
+{% endblock %}
+{% block gamesContent %}
+    <p>/api/v1/games GET all games</p>
+    <p>/api/v1/games POST add game</p>
+{% endblock %}
+{% block statsContent %}
+    <p>/api/v1/team/%SHORT% GET a team statistics</p>
+{% endblock %}
+{% block v2Content %}
+    <p>/api/v2/games POST add a new game</p>
+    <p>/api/v2/games GET all games</p>
+    <p>/api/v2/games/%GAME_ID% POST updated quarters</p>
+{% endblock %}
